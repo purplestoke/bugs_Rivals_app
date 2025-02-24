@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.10.0/web3.min.js"></script>      
+      <script src="{{ url_for('static', filename='js/web3_login.js') }}" defer></script>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>{% block title %}thebugshub{% endblock %}</title>
+      <link rel="icon" sizes="16x16" href="{{ url_for('static', filename='media/favicon16.png') }}">
+      <link rel="icon" sizes="32x32" href="{{ url_for('static', filename='media/favicon32.png') }}">
+      <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='media/favicon.ico') }}">
+      <link rel="stylesheet" href="{{ url_for ('static', filename='css/base.css') }}"/>
+    </head>
+
+    <body>
+        <nav class="navbar">
+          <div class="nav_center">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+          </div>
+          <div class="nav_right">
+            <button class="login_button" onclick="connectWallet()">Login</button>
+          </div>
+        </nav>
+
+        <div class="container">{% block content %} {% endblock %}</div>
+
+        <footer>
+            <div class="footer_container">
+              <div class="footer_left">
+                <h3>bugs</h3>
+                <a href="/contact">Contact Us</a>
+                <a href="/creator">The Creator</a>
+                <a href="/fund">Fund Us</a>
+              </div>
+      
+              <div class="footer_center">
+                <a href="/">
+                  <img
+                    class="the_bugs"
+                    src="{{ url_for ('static', filename='media/bugs_logo.png') }}"
+                  />
+                </a>
+                <p>The Hub of Casual Competitive Gaming</p>
+              </div>
+      
+              <div class="footer_right">
+                <h3>Socials</h3>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>

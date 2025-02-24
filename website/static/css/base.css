@@ -1,0 +1,430 @@
+/* CLEAN EVERYTHING UP */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* NOW WE GET INTO THE REAL DESIGN OF THE WEBPAGE */
+@font-face {
+	font-family: 'typetwo';
+	src: url('../fonts/TypeTwo.woff');
+}
+
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    height: 2.5rem;
+    background: #907fad;
+}
+
+nav a {
+    text-decoration: None;
+    color: white;
+    font-family: 'typetwo';
+    margin: 2rem;
+}
+
+nav a:hover {
+    color: #909fad;
+}
+
+.nav_center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav_right {
+    position: absolute;
+    right: 20px;
+}
+
+/* LOGIN */
+.login_button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login_button:hover {
+    background-color: #909fad;
+    color: white;
+}
+
+/* HEADERS */
+h1 {
+    font-family: 'typetwo';
+    color: #907fad;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-family: 'typetwo';
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}  
+
+h3 {
+	font-family: 'typetwo';
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'typetwo';
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* PARAGRAPH */
+p {
+	font-family: 'typetwo';
+	color: #909fad;
+	font-size: 1rem;
+	margin-top: 0.8rem;
+}
+.spacer {
+	height: 3rem;
+	width: 100%;
+}
+
+.rowContainer {
+    justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0.4rem;
+}
+
+
+.logo {
+	height: 104px;
+	width: 205px;
+}
+
+.logoContainer {
+	margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-top: 2.2rem;
+    margin-bottom: 0.3rem;
+	text-align: center;
+}
+
+.logoH2 {
+    margin-bottom: 3rem;
+}
+
+
+.apexText {
+	background-color: #fe0000;
+}
+
+.xdefText {
+	background-color: #d5ba50;
+}
+
+.finalsText {
+    background-color:  #e4ba3f;
+}
+
+.eventsA, .serversA {
+	text-decoration: underline;
+	color: #907fad;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 3rem 0;
+    font-family: 'typetwo';
+    width: auto;
+    margin-top: auto;
+    bottom: 0;
+
+    /* set the height of the footer as per your requirement */
+    color: #fff;
+    text-align: center;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_left,
+.footer_center,
+.footer_right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer_center h3,
+.footer_right h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.footer_left h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.footer_left p,
+.footer_right p {
+    margin-bottom: 1rem;
+    color: #907fad;
+}
+
+.footer_center {
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.footer_center p {
+    color: white;
+    font-size: 1rem;
+}
+
+.the_bugs {
+    height: 119px;
+    width: 330px;
+}
+
+.footer_right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_right a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #907fad;
+}
+
+.footer_left a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #907fad;
+}
+
+.footer_right a:hover {
+    color: #909fad;
+}
+
+.footer_left a:hover {
+    color: #909fad;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        width: auto;
+    }
+
+    .navbar {
+        height: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.2rem;
+        gap: 0.1rem;
+        justify-content: center;
+    }
+
+    .navbar a {
+        margin: 0rem;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        background: #907fad;
+    }
+    
+    nav a {
+        text-decoration: None;
+        color: white;
+        font-family: 'typetwo';
+    }
+    
+    nav a:hover {
+        color: #909fad;
+    }
+    footer {
+        width: auto;
+        margin: 1rem;
+    }
+    .footer_container {
+        max-width: 768px;
+    }
+    .footer_center {
+        margin: 0;
+    }
+    .the_bugs {
+        height: 55px;
+        width: 120px;
+    }
+}
