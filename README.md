@@ -1,0 +1,1 @@
+# bugs_Rivals_app
